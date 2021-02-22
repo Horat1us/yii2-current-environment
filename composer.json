@@ -3,7 +3,7 @@
   "description": "Yii2 Current Environment Provider",
   "type": "library",
   "require": {
-    "yiisoft/yii2": "2.0.39.3",
+    "yiisoft/yii2": "^2.0.39.3",
     "php": "^7.4 | 8.*",
     "symfony/polyfill-php80": "^1.20",
     "ext-json": "*"

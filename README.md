@@ -1,4 +1,7 @@
 # Yii2 Current Environment
+[![codecov](https://codecov.io/gh/Horat1us/yii2-current-environment/branch/master/graph/badge.svg?token=SYWMMUEYTT)](https://codecov.io/gh/Horat1us/yii2-current-environment)
+
+
 [Русская версия](./README-RU.md)
 Library provides class to get current environment (YII_ENV) of Yii2 application.
 
