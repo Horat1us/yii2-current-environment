@@ -1,9 +1,12 @@
 # Yii2 Current Environment
+[![Test & Lint](https://github.com/Horat1us/yii2-current-environment/actions/workflows/php.yml/badge.svg?branch=master)](https://github.com/Horat1us/yii2-current-environment/actions/workflows/php.yml)
 [![codecov](https://codecov.io/gh/Horat1us/yii2-current-environment/branch/master/graph/badge.svg?token=SYWMMUEYTT)](https://codecov.io/gh/Horat1us/yii2-current-environment)
 
 
 [Русская версия](./README-RU.md)
 Library provides class to get current environment (YII_ENV) of Yii2 application.
+
+Compatibility: tested on PHP 8.4, PHP 8.5
 
 ## Purpose
 Main purpose is to make support, adaptation and modification of applications written 
