@@ -2,6 +2,7 @@
 
 namespace Horat1us\Yii\CurrentEnvironment\Tests;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Horat1us\Yii\CurrentEnvironment;
@@ -10,15 +11,15 @@ use yii\base;
 /**
  * Class BootstrapTest
  * @package Horat1us\Yii\CurrentEnvironment\Tests
- * @coversDefaultClass \Horat1us\Yii\CurrentEnvironment\Bootstrap
  */
+#[CoversClass(CurrentEnvironment\Bootstrap::class)]
 class BootstrapTest extends TestCase
 {
     public function testBootstrap(): void
     {
         /** @var base\Application|MockObject $app */
-        $app = $this->getMockForAbstractClass(base\Application::class, [], '', false, true, true, [
-            'set', 'setContainer',
+        $app = $this->createPartialMock(base\Application::class, [
+            'handleRequest', 'set', 'setContainer',
         ]);
         $app
             ->expects($this->once())
